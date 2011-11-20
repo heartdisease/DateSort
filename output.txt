@@ -1,0 +1,32 @@
+# Output
+TARGET = DateSort
+
+MOC_DIR = moc
+UI_DIR = src
+RCC_DIR = rc
+
+win32 {
+	RC_FILE = rc/resource.rc
+
+	Debug:OBJECTS_DIR = obj/Debug_Win32
+	Debug:DESTDIR = bin/Debug_Win32
+
+	Release:OBJECTS_DIR = obj/Release_Win32
+	Release:DESTDIR = bin/Release_Win32
+}
+unix {
+	CONFIG += debug_and_release
+	
+	Debug:OBJECTS_DIR = obj/Debug
+	Debug:DESTDIR = bin/Debug
+
+	Release:OBJECTS_DIR = obj/Release
+	Release:DESTDIR = bin/Release
+}
+
+build_pass:CONFIG(release, debug|release)
+{
+	CONFIG += static
+	DEFINES += STATIC
+	message("static build")
+}

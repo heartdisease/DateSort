@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="rc/resource.qrc" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="rc/resource.rc" open="0" top="0" tabpos="5">
+		<Cursor position="35" topLine="0" />
+	</File>
+	<File name="src/DateSort.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="133" topLine="0" />
+	</File>
+	<File name="src/DateSortProcess.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1359" topLine="45" />
+	</File>
+	<File name="src/MainWindow.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="1232" topLine="0" />
+	</File>
+	<File name="src/MainWindow.h" open="1" top="0" tabpos="3">
+		<Cursor position="596" topLine="2" />
+	</File>
+	<File name="src/ui_DateSortWidget.h" open="0" top="0" tabpos="0">
+		<Cursor position="757" topLine="82" />
+	</File>
+</CodeBlocks_layout_file>

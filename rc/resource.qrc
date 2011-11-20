@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file alias="calendar.png">../icons/calendar.png</file>
+		<file alias="folder-search.png">../icons/folder-search.png</file>
+	</qresource>
+</RCC>

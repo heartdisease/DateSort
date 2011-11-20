@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DateSort" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DateSort" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -j4 -f $makefile debug" />
+					<CompileFile command="$make -j4 -f $makefile $file" />
+					<Clean command="$make -f $makefile clean debug" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile debug" />
+					<SilentBuild command="$make -j4 -s -f $makefile debug" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DateSort" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -j4 -f $makefile release" />
+					<CompileFile command="$make -j4 -f $makefile $file" />
+					<Clean command="$make -f $makefile clean release" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile release" />
+					<SilentBuild command="$make  -j4 -s -f $makefile release" />
+				</MakeCommands>
+			</Target>
+			<Target title="Debug_Win32">
+				<Option platforms="Windows;" />
+				<Option output="bin/Debug_Win32/DateSort" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug_Win32" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="mingw32-make -j4 -f $makefile Debug" />
+					<CompileFile command="mingw32-make -j4 -f $makefile $file" />
+					<Clean command="mingw32-make -f $makefile clean Debug" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="mingw32-make -j4 -q -f $makefile Debug" />
+					<SilentBuild command="mingw32-make -j4 -s -f $makefile Debug" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release_Win32">
+				<Option platforms="Windows;" />
+				<Option output="bin/Release_Win32/DateSort.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin/Release_Win32" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="mingw32-make -j4 -f $makefile Release" />
+					<CompileFile command="mingw32-make -j4 -f $makefile $file" />
+					<Clean command="mingw32-make -f $makefile clean Release" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="mingw32-make -j4 -q -f $makefile Release" />
+					<SilentBuild command="mingw32-make -j4 -s -f $makefile Release" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="rc/resource.qrc" />
+		<Unit filename="rc/resource.rc">
+			<Option target="Debug_Win32" />
+			<Option target="Release_Win32" />
+		</Unit>
+		<Unit filename="src/DateSort.cpp" />
+		<Unit filename="src/DateSortProcess.cpp" />
+		<Unit filename="src/DateSortProcess.h" />
+		<Unit filename="src/MainWindow.cpp" />
+		<Unit filename="src/MainWindow.h" />
+		<Unit filename="src/ui_DateSortWidget.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
